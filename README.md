@@ -11,7 +11,6 @@ preloaded settings (assuming by protobuf-ts' proto compiling).
 These are the protobuf(s) returned by the `/users/@me/settings-proto/{1|2|3}`
 API endpoint.
 
-> info
 > All the materials in this repository are for educational purposes only.
 
 ## Endpoint mappping to proto file
