@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.guild_settings;
+
+import "discord_protos/discord_users/v1/channel_settings.proto";
+import "google/protobuf/timestamp.proto";
+
+message GuildSettings {
+  map<fixed64, channel_settings.ChannelSettings> channels = 1;
+  uint32 hub_progress = 2;
+  uint32 guild_onboarding_progress = 3;
+  google.protobuf.Timestamp guild_recents_dismissed_at = 4;
+}

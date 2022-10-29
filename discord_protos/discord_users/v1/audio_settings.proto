@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.audio_settings;
+
+import "discord_protos/discord_users/v1/audio_context_setting.proto";
+
+message AudioSettings {
+  map<fixed64, audio_context_setting.AudioContextSetting> user = 1;
+  map<fixed64, audio_context_setting.AudioContextSetting> stream = 2;
+}

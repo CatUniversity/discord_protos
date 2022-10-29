@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.audio_context_setting;
+
+message AudioContextSetting {
+  bool muted = 1;
+  float volume = 2;
+  fixed64 modified_at = 3;
+}

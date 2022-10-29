@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.guild_folders;
+
+import "discord_protos/discord_users/v1/guild_folder.proto";
+
+message GuildFolders {
+  repeated guild_folder.GuildFolder folders = 1;
+  repeated fixed64 guild_positions = 2;
+}

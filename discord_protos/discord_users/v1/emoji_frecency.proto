@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.emoji_frecency;
+
+import "discord_protos/discord_users/v1/frecency_item.proto";
+
+message EmojiFrecency {
+  map<string, frecency_item.FrecencyItem> emojis = 1;
+}

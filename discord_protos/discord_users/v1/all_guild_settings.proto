@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.all_guild_settings;
+
+import "discord_protos/discord_users/v1/guild_settings.proto";
+
+message AllGuildSettings {
+  map<fixed64, guild_settings.GuildSettings> guilds = 1;
+}

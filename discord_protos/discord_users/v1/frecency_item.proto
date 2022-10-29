@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.frecency_item;
+
+message FrecencyItem {
+  uint32 total_uses = 1;
+  repeated uint64 recent_uses = 2;
+  int32 frecency = 3;
+  int32 score = 4;
+}

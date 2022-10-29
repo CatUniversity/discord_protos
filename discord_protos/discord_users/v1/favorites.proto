@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorites;
+
+import "discord_protos/discord_users/v1/favorite_channel.proto";
+
+message Favorites {
+  map<fixed64, favorite_channel.FavoriteChannel> favorite_channels = 1;
+  bool muted = 2;
+}

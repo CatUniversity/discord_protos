@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.channel_settings;
+
+message ChannelSettings {
+  bool collapsed_in_inbox = 1;
+}

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.preloaded_user_settings;
+
+import "discord_protos/discord_users/v1/all_guild_settings.proto";
+import "discord_protos/discord_users/v1/appearance_settings.proto";
+import "discord_protos/discord_users/v1/audio_settings.proto";
+import "discord_protos/discord_users/v1/communities_settings.proto";
+import "discord_protos/discord_users/v1/debug_settings.proto";
+import "discord_protos/discord_users/v1/favorites.proto";
+import "discord_protos/discord_users/v1/game_library_settings.proto";
+import "discord_protos/discord_users/v1/guild_folders.proto";
+import "discord_protos/discord_users/v1/inbox_settings.proto";
+import "discord_protos/discord_users/v1/localization_settings.proto";
+import "discord_protos/discord_users/v1/notification_settings.proto";
+import "discord_protos/discord_users/v1/privacy_settings.proto";
+import "discord_protos/discord_users/v1/status_settings.proto";
+import "discord_protos/discord_users/v1/text_and_images_settings.proto";
+import "discord_protos/discord_users/v1/user_content_settings.proto";
+import "discord_protos/discord_users/v1/versions.proto";
+import "discord_protos/discord_users/v1/voice_and_video_settings.proto";
+
+message PreloadedUserSettings {
+  versions.Versions versions = 1;
+  inbox_settings.InboxSettings inbox = 2;
+  all_guild_settings.AllGuildSettings guilds = 3;
+  user_content_settings.UserContentSettings user_content = 4;
+  voice_and_video_settings.VoiceAndVideoSettings voice_and_video = 5;
+  text_and_images_settings.TextAndImagesSettings text_and_images = 6;
+  notification_settings.NotificationSettings notifications = 7;
+  privacy_settings.PrivacySettings privacy = 8;
+  debug_settings.DebugSettings debug = 9;
+  game_library_settings.GameLibrarySettings game_library = 10;
+  status_settings.StatusSettings status = 11;
+  localization_settings.LocalizationSettings localization = 12;
+  appearance_settings.AppearanceSettings appearance = 13;
+  guild_folders.GuildFolders guild_folders = 14;
+  favorites.Favorites favorites = 15;
+  audio_settings.AudioSettings audio_context_settings = 16;
+  communities_settings.CommunitiesSettings communities = 17;
+}

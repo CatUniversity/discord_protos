@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.theme;
+
+enum Theme {
+  UNSET = 0;
+  DARK = 1;
+  LIGHT = 2;
+}

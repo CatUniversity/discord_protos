@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.guild_folder;
+
+import "google/protobuf/wrappers.proto";
+
+message GuildFolder {
+  repeated fixed64 guild_ids = 1;
+  google.protobuf.Int64Value id = 2;
+  google.protobuf.StringValue name = 3;
+  google.protobuf.UInt64Value color = 4;
+}

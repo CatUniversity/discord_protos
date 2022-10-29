@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.guild_activity_status_restriction_default;
+
+enum GuildActivityStatusRestrictionDefault {
+  OFF = 0;
+  ON_FOR_LARGE_GUILDS = 1;
+}

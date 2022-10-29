@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.appearance_settings;
+
+import "discord_protos/discord_users/v1/theme.proto";
+
+message AppearanceSettings {
+  theme.Theme theme = 1;
+  bool developer_mode = 2;
+}

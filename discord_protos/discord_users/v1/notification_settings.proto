@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.notification_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message NotificationSettings {
+  google.protobuf.BoolValue show_in_app_notifications = 1;
+  google.protobuf.BoolValue notify_friends_on_go_live = 2;
+  fixed64 notification_center_acked_before_id = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorite_gifs;
+
+import "discord_protos/discord_users/v1/favorite_gif.proto";
+
+message FavoriteGIFs {
+  map<string, favorite_gif.FavoriteGIF> gifs = 1;
+  bool hide_tooltip = 2;
+}

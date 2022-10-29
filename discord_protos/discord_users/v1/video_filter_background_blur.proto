@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.video_filter_background_blur;
+
+message VideoFilterBackgroundBlur {
+  bool use_blur = 1;
+}

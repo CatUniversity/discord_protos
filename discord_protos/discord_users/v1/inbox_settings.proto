@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.inbox_settings;
+
+import "discord_protos/discord_users/v1/inbox_tab.proto";
+
+message InboxSettings {
+  inbox_tab.InboxTab current_tab = 1;
+  bool viewed_tutorial = 2;
+}

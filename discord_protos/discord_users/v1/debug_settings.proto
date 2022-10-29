@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.debug_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message DebugSettings {
+  google.protobuf.BoolValue rtc_panel_show_voice_states = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.inbox_tab;
+
+enum InboxTab {
+  UNSPECIFIED = 0;
+  MENTIONS = 1;
+  UNREADS = 2;
+  TODOS = 3;
+}

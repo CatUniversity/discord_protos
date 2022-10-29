@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.status_settings;
+
+import "discord_protos/discord_users/v1/custom_status.proto";
+import "google/protobuf/wrappers.proto";
+
+message StatusSettings {
+  google.protobuf.StringValue status = 1;
+  custom_status.CustomStatus custom_status = 2;
+  google.protobuf.BoolValue show_current_game = 3;
+}

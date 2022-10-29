@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorite_stickers;
+
+message FavoriteStickers {
+  repeated fixed64 sticker_ids = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.sticker_frecency;
+
+import "discord_protos/discord_users/v1/frecency_item.proto";
+
+message StickerFrecency {
+  map<fixed64, frecency_item.FrecencyItem> stickers = 1;
+}

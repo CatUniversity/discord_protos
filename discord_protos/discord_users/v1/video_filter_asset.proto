@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.video_filter_asset;
+
+message VideoFilterAsset {
+  fixed64 id = 1;
+  string asset_hash = 2;
+}

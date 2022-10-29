@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.game_library_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message GameLibrarySettings {
+  google.protobuf.BoolValue install_shortcut_desktop = 1;
+  google.protobuf.BoolValue install_shortcut_start_menu = 2;
+  google.protobuf.BoolValue disable_games_tab = 3;
+}

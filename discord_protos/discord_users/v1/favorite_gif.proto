@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorite_gif;
+
+import "discord_protos/discord_users/v1/gif_type.proto";
+
+message FavoriteGIF {
+  gif_type.GIFType format = 1;
+  string src = 2;
+  uint32 width = 3;
+  uint32 height = 4;
+  uint32 order = 5;
+}

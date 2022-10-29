@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.user_content_settings;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+message UserContentSettings {
+  bytes dismissed_contents = 1;
+  google.protobuf.StringValue last_dismissed_outbound_promotion_start_date = 2;
+  google.protobuf.Timestamp premium_tier_0_modal_dismissed_at = 3;
+}

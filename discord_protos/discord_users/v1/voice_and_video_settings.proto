@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.voice_and_video_settings;
+
+import "discord_protos/discord_users/v1/video_filter_asset.proto";
+import "discord_protos/discord_users/v1/video_filter_background_blur.proto";
+import "google/protobuf/wrappers.proto";
+
+message VoiceAndVideoSettings {
+  oneof videoBackgroundFilterDesktop {
+    video_filter_background_blur.VideoFilterBackgroundBlur blur = 1;
+    uint32 preset_option = 2;
+    video_filter_asset.VideoFilterAsset custom_asset = 3;
+  }
+  google.protobuf.BoolValue always_preview_video = 5;
+  google.protobuf.UInt32Value afk_timeout = 6;
+  google.protobuf.BoolValue stream_notifications_enabled = 7;
+  google.protobuf.BoolValue native_phone_integration_enabled = 8;
+}

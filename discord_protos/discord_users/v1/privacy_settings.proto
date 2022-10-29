@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.privacy_settings;
+
+import "discord_protos/discord_users/v1/guild_activity_status_restriction_default.proto";
+import "google/protobuf/wrappers.proto";
+
+message PrivacySettings {
+  google.protobuf.BoolValue allow_activity_party_privacy_friends = 1;
+  google.protobuf.BoolValue allow_activity_party_privacy_voice_channel = 2;
+  repeated fixed64 restricted_guild_ids = 3;
+  bool default_guilds_restricted = 4;
+  bool allow_accessibility_detection = 7;
+  google.protobuf.BoolValue detect_platform_accounts = 8;
+  google.protobuf.BoolValue passwordless = 9;
+  google.protobuf.BoolValue contact_sync_enabled = 10;
+  google.protobuf.UInt32Value friend_source_flags = 11;
+  google.protobuf.UInt32Value friend_discovery_flags = 12;
+  repeated fixed64 activity_restricted_guild_ids = 13;
+  guild_activity_status_restriction_default.GuildActivityStatusRestrictionDefault default_guilds_activity_restricted = 14;
+  repeated fixed64 activity_joining_restricted_guild_ids = 15;
+  repeated fixed64 message_request_restricted_guild_ids = 16;
+  google.protobuf.BoolValue default_message_request_restricted = 17;
+  google.protobuf.BoolValue drops_opted_out = 18;
+  google.protobuf.BoolValue non_spam_retraining_opt_in = 19;
+}

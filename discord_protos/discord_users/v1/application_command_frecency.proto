@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.application_command_frecency;
+
+import "discord_protos/discord_users/v1/frecency_item.proto";
+
+message ApplicationCommandFrecency {
+  map<string, frecency_item.FrecencyItem> application_commands = 1;
+}

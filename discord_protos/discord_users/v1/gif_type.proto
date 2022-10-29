@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.gif_type;
+
+enum GIFType {
+  NONE = 0;
+  IMAGE = 1;
+  VIDEO = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.communities_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message CommunitiesSettings {
+  google.protobuf.BoolValue disable_home_auto_nav = 1;
+}

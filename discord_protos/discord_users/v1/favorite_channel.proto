@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorite_channel;
+
+import "discord_protos/discord_users/v1/favorite_channel_type.proto";
+
+message FavoriteChannel {
+  string nickname = 1;
+  favorite_channel_type.FavoriteChannelType type = 2;
+  uint32 position = 3;
+  fixed64 parent_id = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.favorite_channel_type;
+
+enum FavoriteChannelType {
+  UNSET_FAVORITE_CHANNEL_TYPE = 0;
+  REFERENCE_ORIGINAL = 1;
+  CATEGORY = 2;
+}

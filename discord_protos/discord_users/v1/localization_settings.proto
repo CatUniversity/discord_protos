@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.localization_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message LocalizationSettings {
+  google.protobuf.StringValue locale = 1;
+  google.protobuf.Int32Value timezone_offset = 2;
+}

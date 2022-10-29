@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.frecency_user_settings;
+
+import "discord_protos/discord_users/v1/application_command_frecency.proto";
+import "discord_protos/discord_users/v1/emoji_frecency.proto";
+import "discord_protos/discord_users/v1/favorite_emojis.proto";
+import "discord_protos/discord_users/v1/favorite_gifs.proto";
+import "discord_protos/discord_users/v1/favorite_stickers.proto";
+import "discord_protos/discord_users/v1/sticker_frecency.proto";
+import "discord_protos/discord_users/v1/versions.proto";
+
+message FrecencyUserSettings {
+  versions.Versions versions = 1;
+  favorite_gifs.FavoriteGIFs favorite_gifs = 2;
+  favorite_stickers.FavoriteStickers favorite_stickers = 3;
+  sticker_frecency.StickerFrecency sticker_frecency = 4;
+  favorite_emojis.FavoriteEmojis favorite_emojis = 5;
+  emoji_frecency.EmojiFrecency emoji_frecency = 6;
+  application_command_frecency.ApplicationCommandFrecency application_command_frecency = 7;
+}

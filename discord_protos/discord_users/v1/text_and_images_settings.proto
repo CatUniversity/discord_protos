@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package discord_protos.discord_users.v1.text_and_images_settings;
+
+import "google/protobuf/wrappers.proto";
+
+message TextAndImagesSettings {
+  google.protobuf.StringValue diversity_surrogate = 1;
+  google.protobuf.BoolValue use_rich_chat_input = 2;
+  google.protobuf.BoolValue use_thread_sidebar = 3;
+  google.protobuf.StringValue render_spoilers = 4;
+  repeated string emoji_picker_collapsed_sections = 5;
+  repeated string sticker_picker_collapsed_sections = 6;
+  google.protobuf.BoolValue view_image_descriptions = 7;
+  google.protobuf.BoolValue show_command_suggestions = 8;
+  google.protobuf.BoolValue inline_attachment_media = 9;
+  google.protobuf.BoolValue inline_embed_media = 10;
+  google.protobuf.BoolValue gif_auto_play = 11;
+  google.protobuf.BoolValue render_embeds = 12;
+  google.protobuf.BoolValue render_reactions = 13;
+  google.protobuf.BoolValue animate_emoji = 14;
+  google.protobuf.UInt32Value animate_stickers = 15;
+  google.protobuf.BoolValue enable_tts_command = 16;
+  google.protobuf.BoolValue message_display_compact = 17;
+  google.protobuf.UInt32Value explicit_content_filter = 19;
+  google.protobuf.BoolValue view_nsfw_guilds = 20;
+  google.protobuf.BoolValue convert_emoticons = 21;
+  google.protobuf.BoolValue expression_suggestions_enabled = 22;
+  google.protobuf.BoolValue view_nsfw_commands = 23;
+  google.protobuf.BoolValue use_legacy_chat_input = 24;
+}
