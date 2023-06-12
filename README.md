@@ -1,3 +1,5 @@
+This project has been superseded by [Dolfies' discord-protos](https://github.com/dolfies/discord-protos)
+
 # discord_protos
 
 Protocol files constructed by hand from Discord's web client files.
